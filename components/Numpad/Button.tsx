@@ -8,8 +8,7 @@ interface IButton {
 export const Button: React.FC<IButton> = ({ label, disableMt }) => {
   return (
     <TouchableWithoutFeedback>
-
-      <View className={`h-11 w-11 rounded-full bg-black flex items-center justify-center ${!disableMt ? 'mt-[8px]' : ''}`}>
+      <View className={`h-[40px] w-[30%] rounded-full bg-black flex items-center justify-center shadow shadow-black ${!disableMt ? 'mt-[12px]' : ''}`}>
         <Text className={'color-white text-xl'}>
           {label}
         </Text>

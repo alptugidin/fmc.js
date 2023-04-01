@@ -4,7 +4,7 @@ import Button from './Button';
 
 export const Numpad: React.FC = () => {
   return (
-    <View className={'top-[500px] absolute w-[34%] flex flex-row flex-wrap mt-5 ml-[1px] justify-between'}>
+    <View className={'w-1/3 rounded-b-lg flex flex-row flex-wrap pb-[3px] justify-between mt-[3.5%] pl-0.5'}>
       <Button label={'1'}/>
       <Button label={'2'}/>
       <Button label={'3'}/>

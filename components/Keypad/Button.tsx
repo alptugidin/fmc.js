@@ -4,10 +4,10 @@ interface IButton {
     label: string
     disableMl?: boolean
 }
-const Button: React.FC<IButton> = ({ label ,disableMl}) => {
+const Button: React.FC<IButton> = ({ label, disableMl }) => {
   return (
     <TouchableWithoutFeedback>
-      <View className={`w-10 h-10 rounded-lg bg-black flex justify-center items-center mt-[12px] ${disableMl ? '' : 'ml-[12px]'}`}>
+      <View className={'w-[16%] h-[40px] rounded-lg bg-black flex justify-center items-center mt-[12px]'}>
         <Text className={'color-white text-xl'}>
           {label}
         </Text>
