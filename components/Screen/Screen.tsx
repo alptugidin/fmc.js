@@ -2,10 +2,10 @@ import { Image, Text, View } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import MenuButton from './MenuButton';
 import { type IScreen } from '../../types';
-import Cells from './Cells';
-export const Screen: React.FC<IScreen> = ({ socket }) => {
+import { useFmc } from '../FMC';
+export const Screen: React.FC = () => {
   const [cdu, setCdu] = useState<string[]>([]);
-  const [line1, setLine1] = useState<string[]>([]);
+  const socket = useFmc();
   useEffect(() => {
     socket.on('cdu', (data: string[]) => {
       setCdu(data);
