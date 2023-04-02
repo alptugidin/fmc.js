@@ -3,10 +3,10 @@ import { Text, View, Dimensions, PixelRatio } from 'react-native';
 import Button from './Button';
 import { type IPageButtons } from '../../types';
 
-export const PageButtons: React.FC<IPageButtons> = ({ socket }) => {
+export const PageButtons: React.FC = () => {
   const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
   const handleButton = (): void => {
-    socket.emit('write', 'L:SSS');
+    // socket.emit('write', 'L:SSS');
   };
   return (
     <>
